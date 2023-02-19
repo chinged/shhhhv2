@@ -1,3 +1,1 @@
-function redirect(url) {
-    window.open(url, '_blank');
-}
+function redirect(n){window.open(n,"_blank")}
