@@ -93,7 +93,6 @@ getgenv().Shhhh = {
   Resolver = {
       Enabled = true,
       Anti_Aim_Viewer = true,
-      DelayFix = 4, --Make higher if you have delay with guns
   },
   TriggerBot = {
       Enabled = false,
