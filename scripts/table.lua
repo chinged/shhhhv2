@@ -36,7 +36,7 @@ getgenv().Shhhh = {
   },
   AimAssist = {
       Enabled = true,
-      Hold_KeyBind = false,
+      Hold_KeyBind = true,
       Mode = "KeyBind", -- // "KeyBind" or "Mouse"
       KeyBind = 'Q',
       MouseBind = Enum.UserInputType.MouseButton2,
@@ -51,12 +51,23 @@ getgenv().Shhhh = {
       Use_AirShotHitPart = false,
       AirShotHitPart = "Head",
       NearestCursorHitpart = true,
+      UnLockWhenTyping = true,
+      UnlockWhenReloading = true,
+      UnlockWhenNotHoldingGun = true,
+      EasingStyle = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
+          First = "Elastic",
+          Second = "Sine",
+      },
   },
   Shake = {
       Enabled = true,
-      X = 5,
+      x = 5,
       Y = 5,
       Z = 5,
+      AirShot = false,
+      Airshot___X = 5,
+      Airshot___Y = 5,
+      Airshot___Z = 5,
   },
   Fov = {
       Silent = {
@@ -98,12 +109,32 @@ getgenv().Shhhh = {
       Enabled = false,
       Delay = 0.1,
   },
+  Rejoin = {
+      Enabled = false,
+      Keybind = "Q",
+  },
+  Noclip_Macro = {
+      Enabled = false,
+      KeyBind = Enum.KeyCode.H,
+      First_Gun = "[Shotgun]",
+      Second_Gun = "[TacticalShotgun]",
+  },
   Animation = { -- once u click the keybinds it makes u use the Animation
       Lay = true, LayKey = Enum.KeyCode.T,
       Greet = true, GreetKey = Enum.KeyCode.G,
       Speed = false, SpeedKey = Enum.KeyCode.N,
       Sturdy = false, SturdyKey = Enum.KeyCode.H,
       Griddy = false, GriddyKey = Enum.KeyCode.G,
+  },
+  GunSorting = {
+    Enabled = true,
+    SortFood = true,
+    Keybind = "Z",
+    FirstSlot = "[Double-Barrel SG]",
+    SecondSlot = "[Revolver]",
+    ThirdSlot = "[TacticalShotgun]",
+    FourthSlot = "[Shotgun]",
+    FifthSlot = "[Katana]",
   },
   Mod = {
       Enabled = false,
@@ -234,7 +265,10 @@ getgenv().Shhhh = {
       DoubleBarrel_Fov = "dfov",
       Shotgun_Fov = "sfov",
       TacticalShotgun_Fov = "tfov",
+      Show_Fov_Silent = "$SFS", -- use true or false only like $SFS true or false
+      Show_Fov_AimAssist = "$SFA", -- use true or false only like $SFA true or false
   },
 }
+
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzad/Shhhh/main/BETA", true))()
