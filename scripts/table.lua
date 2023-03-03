@@ -157,6 +157,12 @@ getgenv().Shhhh = {
       End = 984,
       Speed = 1,
   },
+  Recv = {
+    Enabled = true,
+    Start = 0.10,
+    End = 0.25,
+    Speed = 1,
+  },
   GunFov = { -- Turn Default and AirShot off for Range
       Enabled = false,
       Fov = true,
@@ -272,3 +278,4 @@ getgenv().Shhhh = {
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzad/Shhhh/main/BETA", true))()
+
