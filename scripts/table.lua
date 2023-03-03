@@ -61,7 +61,7 @@ getgenv().Shhhh = {
   },
   Shake = {
       Enabled = true,
-      x = 5,
+      X = 5,
       Y = 5,
       Z = 5,
       AirShot = false,
