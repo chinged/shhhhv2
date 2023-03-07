@@ -36,7 +36,7 @@ getgenv().Shhhh = {
   },
   AimAssist = {
       Enabled = true,
-      Hold_KeyBind = true,
+      Hold_KeyBind = false,
       Mode = "KeyBind", -- // "KeyBind" or "Mouse"
       KeyBind = 'Q',
       MouseBind = Enum.UserInputType.MouseButton2,
@@ -51,9 +51,9 @@ getgenv().Shhhh = {
       Use_AirShotHitPart = false,
       AirShotHitPart = "Head",
       NearestCursorHitpart = true,
-      UnLockWhenTyping = true,
-      UnlockWhenReloading = true,
-      UnlockWhenNotHoldingGun = true,
+      UnLockWhenTyping = false,
+      UnlockWhenReloading = false,
+      UnlockWhenNotHoldingGun = false,
       EasingStyle = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
           First = "Elastic",
           Second = "Sine",
@@ -278,4 +278,3 @@ getgenv().Shhhh = {
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzad/Shhhh/main/BETA", true))()
-
